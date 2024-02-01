@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joffre - Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navega">
+            <a class="opciones" href="#sobre-mi">Sobre mí</a>
+            <a class="opciones" href="#social">Social</a>
+            <a class="opciones" href="#proyectos">Proyectos</a>
+            <a class="opciones" href="#cont">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="todo">
+        <section id="sobre-mi">
+            <img class="foto" src="/imagenes/perfil.jpg" alt="imagen de perfil">
+            <article>
+                <h2>
+                    <img class="logo1" src="/imagenes/pngwing.com.png" alt="">
+                    <span>Joffre Angelo Gavidia Huamali</span>
+                </h2>
+                <p>Actualmente soy estudiante de Ingeniería de Sistemas en la <strong>Universidad de Huánuco (UDH)</strong>, me encuentro cursando el octavo ciclo. Además soy una persona responsable, con principios y valores, capaz de trabajar bajo presión y de ser útil en la labor que me confieren, con facilidad de expresión verbal y escrita.</p>
+            </article>
+        </section>
+        <section id="social">
+            <h2>
+                <span>Social</span>
+            </h2>
+            <nav class="popap">
+                <a class="opciones2" href="https://www.linkedin.com/in/joffre-angelo-gavidia-huamali-b317472b1/" target="_blank"> <img class="foto3" src="/imagenes/link.png" alt="">LinkedIn</a>
+                <a class="opciones2" href="/doc/CV.pdf" target="_blank">Descargar CV</a>
+            </nav>
+        </section>
+
+        <section id="proyectos">
+            <h2>
+                <span>Proyectos</span>
+            </h2>
+               <section class="pro">
+                    <article>
+                        <img class="foto2" src="/imagenes/proyecto1.PNG" alt="imagen de perfil">
+                    </article>
+                    <div>
+                        <article class="nombre">
+                            <h2>
+                                PROPUESTA DE AMPLIACIÓN Y MEJORA DE LA COMUNICACIÓN Y EFICIENCIA OPERATIVA DE LA EMPRESA TINBET
+                            </h2>
+                            <p>El proyecto consistio en mejorar la comunicacion de la empresa TINBET, se utilizo el programa de simulacion de redes Cisco Packet Tracer</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="pro">
+                    <article>
+                        <img class="foto2" src="/imagenes/issacimagen.png" alt="imagen de perfil">
+                    </article>
+                    <div>
+                        <article class="nombre">
+                            <h2>
+                                Nombre del proyecto
+                            </h2>
+                            <p>Aca va la descripcion del proyecto</p>
+                        </article>
+                    </div>
+                </section>
+        </section>
+        <section >
+            <h2>
+                <span>Habilidades</span>
+            </h2>
+            <section class="habilidades">
+                    <h3 class="hijo">
+                        <img class="icono" src="/imagenes/html.png" alt="">
+                        HTML
+                    </h3>
+                    <h3 class="hijo">
+                        <img class="icono" src="/imagenes/css.png" alt="">
+                        CSS
+                    </h3>
+                    <h3 class="hijo">
+                        <img class="icono" src="/imagenes/JS.png" alt="">
+                        JavaScript
+                    </h3>
+            </section>
+        </section>
+    
+    <footer id="cont">
+        <div class="contacto">
+            <h2 >
+                <span>Contacto</span>
+            </h2>
+            <div class="cont">
+                <h4 class="contahij" id="correo">
+                    joffregh3002@gmail.com
+                </h4>
+                <button class="bot" onclick="copiarAlPortapapeles()">Copiar</button>
+                <div class="tooltip" id="mensaje-copiado">Correo copiado al portapapeles</div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+<script>
+    function copiarAlPortapapeles() {
+        var correoElement = document.getElementById("correo");
+        var mensajeCopiado = document.getElementById("mensaje-copiado");
+        
+        var rangoSeleccion = document.createRange();
+        rangoSeleccion.selectNode(correoElement);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(rangoSeleccion);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+
+        // Muestra el mensaje de correo copiado
+        mensajeCopiado.style.opacity = 1;
+        setTimeout(function() {
+            mensajeCopiado.style.opacity = 0;
+        }, 2000); // Oculta el mensaje después de 2 segundos (ajusta según tus preferencias)
+    }
+</script>
+
+</body>
+</html>

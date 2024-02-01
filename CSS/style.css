@@ -1,0 +1,269 @@
+/* body{
+    font-family: Lato,system-ui,sans serif;;
+    background-color: rgb(2, 6, 23);
+    color: rgba(235, 242, 248, 0.849);
+}
+
+.opciones{
+    color: rgba(235, 242, 248, 0.849);
+}
+
+.foto{
+    width: 100px;
+    height: 100px;
+    box-sizing: content-box;
+}
+
+.navega{
+    text-align: center;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 95px;
+}
+
+main{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 55%;
+}
+
+span{
+    font-size: 45px;
+}
+
+#sobre-mi{
+    border: 1px solid;
+}
+
+.opciones{
+    width: 100px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+
+#sobre-mi{
+    display: block;
+    
+} */
+
+body {
+    font-family: Lato, system-ui, sans-serif;
+    background-color: rgb(2, 6, 23);
+    color: rgb(216, 216, 216);
+    
+}
+h2{
+    font-size: 20px;
+}
+.opciones {
+    color: rgba(235, 242, 248, 0.849);
+}
+
+.foto {
+    height: 100px;
+    height: 100px; /* Tamaño fijo de la foto */
+    border-radius: 50px;
+        
+}
+.logo1{
+    width: 40px;
+    
+}
+
+.navega {
+    text-align: center;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 115px;
+    
+}
+
+.menu-hamburguesa {
+    display: none; /* Inicialmente oculto */
+}
+
+main {
+    /* border: 1px solid green; */
+    /* display: flex; */
+    justify-content: center;
+    flex-wrap: wrap; /* Cambiado a wrap para permitir varios elementos por fila en pantallas pequeñas */
+    margin: auto;
+    width: 55%; /* Ajustado para pantallas más pequeñas */
+    
+}
+
+span {
+    font-size: 50px; /* Reducido el tamaño de la fuente para pantallas más pequeñas */
+}
+
+#sobre-mi {
+    /* border: 1px solid; */
+    margin-bottom: 80px;
+}
+
+.popap{
+    width: 100%;
+    height: 85px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opciones {
+    width: 110px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: content-box;
+    /* border: 1px solid; */
+}
+.opciones2{
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    /* box-sizing: content-box; */
+    color: rgba(235, 242, 248, 0.849);
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: rgb(41, 52, 63);
+}
+.foto3{
+    width: 35px;
+}
+
+#social{
+    margin-bottom: 80px;
+}
+/* .pro {
+    border: 1px solid;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nombre{
+    padding-left: 15px;
+}
+.imgpro {
+    
+} */
+
+.pro {
+    /* border: 1px solid; */
+    display: flex;
+    margin-bottom: 80px; /* Agregado margen para separar las secciones */
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.foto2{
+    width: 90%;
+    height: auto;
+}
+
+.habilidades{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.hijo{
+    width: 150px;
+    height: 55px;
+    background-color: rgb(41, 52, 63);
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 1px solid;
+    margin-left: 15px;
+}
+.icono{
+    width: 35px;
+}
+
+.contacto{
+    /* border: 1px solid white; */
+    
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid; */
+    /* border: 1px solid; */
+    position: relative;
+    }
+
+.contahij{
+    width: 70%;
+    border: 3px solid rgba(136, 136, 136, 0.877);
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(41, 52, 63);
+}
+
+
+.bot{
+    width: 15%;
+    /* height: 40px; */
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: -40px; /* Ajusta la posición vertical según tu diseño */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 765px) {
+    .navega {
+        display: none; /* Ocultamos la barra de navegación en pantallas pequeñas */
+    }
+
+    .menu-hamburguesa {
+        display: block; /* Mostramos el menú de hamburguesa en pantallas pequeñas */
+    }
+    main {
+        width: 100%; /* Cambiado a ancho completo para pantallas más pequeñas */
+    }
+
+    span {
+        font-size: 35px; /* Tamaño de fuente aún más reducido para pantallas muy pequeñas */
+    }
+
+    .pro{
+        flex-wrap: wrap;
+        justify-content:center; /*eje x*/
+    }
+    .foto2{
+        width: 100%;
+    }
+    .popap {
+        flex-direction: row; /* Cambiado a disposición de columna en pantallas pequeñas */
+        height: auto; /* Ajustado la altura para adaptarse al contenido en pantallas pequeñas */
+    }
+    .logo1{
+        width: 25px;
+    }
+}
