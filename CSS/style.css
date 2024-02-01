@@ -1,57 +1,3 @@
-/* body{
-    font-family: Lato,system-ui,sans serif;;
-    background-color: rgb(2, 6, 23);
-    color: rgba(235, 242, 248, 0.849);
-}
-
-.opciones{
-    color: rgba(235, 242, 248, 0.849);
-}
-
-.foto{
-    width: 100px;
-    height: 100px;
-    box-sizing: content-box;
-}
-
-.navega{
-    text-align: center;
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: center;
-    font-size: 20px;
-    padding: 20px;
-    margin-bottom: 95px;
-}
-
-main{
-    border: 1px solid green;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    width: 55%;
-}
-
-span{
-    font-size: 45px;
-}
-
-#sobre-mi{
-    border: 1px solid;
-}
-
-.opciones{
-    width: 100px;
-    text-decoration: none;
-    box-sizing: content-box;
-}
-
-#sobre-mi{
-    display: block;
-    
-} */
-
 body {
     font-family: Lato, system-ui, sans-serif;
     background-color: rgb(2, 6, 23);
@@ -61,22 +7,26 @@ body {
 h2{
     font-size: 20px;
 }
-.opciones {
+.opciones-nav{
     color: rgba(235, 242, 248, 0.849);
+    width: 110px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: content-box;
 }
 
-.foto {
+.foto-perf{
     height: 100px;
-    height: 100px; /* Tamaño fijo de la foto */
+    height: 100px;
     border-radius: 50px;
         
 }
 .logo1{
     width: 40px;
-    
 }
 
-.navega {
+.nav{
     text-align: center;
     display: flex;
     flex-wrap: row wrap;
@@ -87,53 +37,39 @@ h2{
     
 }
 
-.menu-hamburguesa {
-    display: none; /* Inicialmente oculto */
+.menu-oculto{
+    display: none;
 }
 
-main {
-    /* border: 1px solid green; */
-    /* display: flex; */
+.main{
     justify-content: center;
-    flex-wrap: wrap; /* Cambiado a wrap para permitir varios elementos por fila en pantallas pequeñas */
+    flex-wrap: wrap;
     margin: auto;
-    width: 55%; /* Ajustado para pantallas más pequeñas */
-    
+    width: 55%; 
 }
 
-span {
-    font-size: 50px; /* Reducido el tamaño de la fuente para pantallas más pequeñas */
+span{
+    font-size: 50px;
 }
 
-#sobre-mi {
-    /* border: 1px solid; */
+#sobre-mi{
     margin-bottom: 80px;
 }
 
-.popap{
+.opc-cont{
     width: 100%;
     height: 85px;
-    /* border: 1px solid; */
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.opciones {
-    width: 110px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 20px;
-    box-sizing: content-box;
-    /* border: 1px solid; */
-}
-.opciones2{
+.opciones-soci{
     width: 180px;
     height: 40px;
-    margin: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    /* box-sizing: content-box; */
     color: rgba(235, 242, 248, 0.849);
     border: 2px solid;
     border-radius: 15px;
@@ -141,30 +77,15 @@ span {
     margin-left: 15px;
     background-color: rgb(41, 52, 63);
 }
-.foto3{
+.logo3{
     width: 35px;
 }
 
 #social{
     margin-bottom: 80px;
 }
-/* .pro {
-    border: 1px solid;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.nombre{
-    padding-left: 15px;
-}
-.imgpro {
-    
-} */
 
-.pro {
-    /* border: 1px solid; */
+.sec-pro{
     display: flex;
     margin-bottom: 80px; /* Agregado margen para separar las secciones */
     flex-wrap: nowrap;
@@ -172,43 +93,40 @@ span {
     margin-bottom: 80px;
 }
 
-.foto2{
-    width: 90%;
-    height: auto;
+.foto-pro{
+    width: 360px;
 }
 
 .habilidades{
     width: 100%;
-    /* border: 1px solid; */
     display: flex;
     margin-bottom: 80px;
+    flex-flow: row wrap;
 }
 
-.hijo{
-    width: 150px;
+.hijo-hab{
+    
+    flex-basis: 150px;
     height: 55px;
     background-color: rgb(41, 52, 63);
     border-radius: 10px;
     justify-content: space-around;
     border: 1px solid;
     margin-left: 15px;
+    
 }
-.icono{
+.icono-hijo{
     width: 35px;
 }
 
-.contacto{
-    /* border: 1px solid white; */
-    
-}
 .cont{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid; */
-    /* border: 1px solid; */
     position: relative;
-    }
+    flex-wrap: wrap;
+    
+}
 
 .contahij{
     width: 70%;
@@ -216,35 +134,43 @@ span {
     padding: 15px;
     border-radius: 15px;
     background-color: rgb(41, 52, 63);
+    flex-grow: 1;
+    
 }
 
-
 .bot{
-    width: 15%;
-    /* height: 40px; */
+    width: 20%;
+    height: 45px;
     position: relative;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 1px solid rgba(136, 136, 136, 0.877);
+    font-family: Lato, system-ui, sans-serif;
+    font-size: 20px;
+    flex-grow: 1;
 }
 
 .tooltip {
     position: absolute;
-    top: -40px; /* Ajusta la posición vertical según tu diseño */
-    background-color: rgba(0, 0, 0, 0.8);
+    top: -30px; /* Ajusta la posición vertical según diseño */
+    background-color: rgba(136, 136, 136, 0.877);
+    font-family: Lato, system-ui, sans-serif;
     color: white;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-@media (max-width: 765px) {
-    .navega {
+@media (max-width: 886px) {
+    .nav {
         display: none; /* Ocultamos la barra de navegación en pantallas pequeñas */
     }
 
-    .menu-hamburguesa {
-        display: block; /* Mostramos el menú de hamburguesa en pantallas pequeñas */
+    .menu-oculto {
+        display: block; /* Mostramos el menú de desplegable en pantallas pequeñas */
     }
-    main {
+    .main{
         width: 100%; /* Cambiado a ancho completo para pantallas más pequeñas */
     }
 
@@ -252,17 +178,20 @@ span {
         font-size: 35px; /* Tamaño de fuente aún más reducido para pantallas muy pequeñas */
     }
 
-    .pro{
+    .sec-pro{
         flex-wrap: wrap;
         justify-content:center; /*eje x*/
     }
-    .foto2{
+
+    .foto-pro{
         width: 100%;
     }
-    .popap {
+
+    .opc-cont{
         flex-direction: row; /* Cambiado a disposición de columna en pantallas pequeñas */
         height: auto; /* Ajustado la altura para adaptarse al contenido en pantallas pequeñas */
     }
+
     .logo1{
         width: 25px;
     }
