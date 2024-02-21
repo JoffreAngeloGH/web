@@ -77,6 +77,29 @@ span{
     margin-left: 15px;
     background-color: rgb(41, 52, 63);
 }
+.opc-cont2{
+    width: 100%;
+    height: 285px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.opciones-soci2{
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 19px;
+    color: rgba(235, 242, 248, 0.849);
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: rgb(41, 52, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .logo3{
     width: 35px;
 }
