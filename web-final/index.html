@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joffre - Portafolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="opciones-nav" href="#sobre-mi">Sobre mí</a>
+            <a class="opciones-nav" href="#social">Social</a>
+            <a class="opciones-nav" href="#proyectos">Proyectos</a>
+            <a class="opciones-nav" href="#cont">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="sobre-mi">
+            <img class="foto-perf" src="imagenes/perfil.jpg" alt="imagen de perfil">
+            <article>
+                <h2>
+                    <img class="logo1" src="imagenes/pngwing.com.png" alt="">
+                    <span>Joffre Angelo Gavidia Huamali</span>
+                </h2>
+                <p>Actualmente, soy estudiante de Ingeniería de Sistemas en la 
+                    <strong>Universidad de Huánuco (UDH)</strong>, me encuentro cursando el octavo ciclo. 
+                    Soy una persona responsable, con principios y valores, capaz de trabajar bajo presión y 
+                    ser útil en las tareas que se me asignan. Además, poseo facilidad tanto en la expresión verbal como escrita.</p>
+            </article>
+        </section>
+        <section id="social">
+            <h2>
+                <span>Social</span>
+            </h2>
+            <nav class="opc-cont">
+                <a class="opciones-soci" href="https://www.linkedin.com/in/joffre-angelo-gavidia-huamali-b317472b1/" target="_blank"> <img class="logo3" src="imagenes/link.png" alt="logo de LinkedIn">LinkedIn</a>
+                <a class="opciones-soci" href="doc/CV.pdf" target="_blank">Descargar CV</a>
+            </nav>
+        </section>
+
+        <section id="proyectos">
+            <h2>
+                <span>Proyecto web</span>
+            </h2>
+            <section class="sec-pro">
+                <article>
+                    <img class="foto-pro" src="imagenes/proyecto2.PNG" alt="imagen del proyecto1">
+                </article>
+                <div>
+                    <article class="nombre">
+                        <h2>
+                            PAGINA WEB PARA LA EMPRESA PLAY TOURS
+                        </h2>
+                        <p>El proyecto en grupo consistió en mejorar la página web 
+                            de la empresa Play Tours utilizando los conceptos de Experiencia de Usuario (UX) e Interfaz de Usuario (UI).</p>
+                    </article>
+                </div>
+            </section>
+            <h2>
+                <span>Proyectos de redes</span>
+            </h2>
+               <section class="sec-pro">
+                    <article>
+                        <img class="foto-pro" src="imagenes/proyecto1.PNG" alt="imagen del proyecto2">
+                    </article>
+                    <div>
+                        <article class="nombre">
+                            <h2>
+                                PROPUESTA DE AMPLIACIÓN Y MEJORA DE LA COMUNICACIÓN Y EFICIENCIA OPERATIVA DE LA EMPRESA TINBET
+                            </h2>
+                            <p>El proyecto en grupo consistió en mejorar la comunicación de la empresa TINBET. Para 
+                                 ello, se utilizó el programa de simulación de redes Cisco Packet Tracer.</p>
+                        </article>
+                    </div>
+                </section>
+                
+                <section class="sec-pro">
+                    <article>
+                        <img class="foto-pro" src="imagenes/proyecto3.PNG" alt="imagen del proyecto3">
+                    </article>
+                    <div>
+                        <article class="nombre">
+                            <h2>
+                                PROPUESTA DE UNA ARQUITECTURA DE RED PARA MEJORAR 
+                                LA COMUNICACIÓN Y EFICIENCIA OPERATIVA DE LA EMPRESA MISHELL IMPORTACIONES
+                            </h2>
+                            <p>El proyecto en grupo consistió en proponer mejoras en el cableado estructurado de la 
+                                empresa, así como en el diseño de la topología de LAN y MAN. Todo esto se llevó a 
+                                cabo en el simulador Cisco Packet Tracer.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+        </section>
+        <section >
+            <h2>
+                <span>Habilidades</span>
+            </h2>
+            <section class="habilidades">
+                    <h3 class="hijo-hab">
+                        <img class="icono-hijo" src="imagenes/html.png" alt="logo de HTML">
+                        HTML
+                    </h3>
+                    <h3 class="hijo-hab">
+                        <img class="icono-hijo" src="imagenes/css.png" alt="logo de CSS">
+                        CSS
+                    </h3>
+                    <h3 class="hijo-hab">
+                        <img class="icono-hijo" src="imagenes/JS.png" alt="logo de JavaScript">
+                        JavaScript
+                    </h3>
+            </section>
+            <section>
+                <h2>
+                    <span>Conocimientos y aptitudes</span>
+                </h2>
+                <nav class="opc-cont2">
+                    <a class="opciones-soci2" >Microsoft 365</a>
+                    <a class="opciones-soci2" >Laravel</a>
+                    <a class="opciones-soci2" >Adobe Photoshop</a>
+                    <a class="opciones-soci2" >MySQL Workbench</a>
+                    <a class="opciones-soci2" >Gestion de proyectos</a>
+                </nav>
+            </section>
+        </section>
+    
+    <footer id="cont">
+        <div class="contacto">
+            <h2 >
+                <span>Contacto</span>
+            </h2>
+            <div class="cont">
+                <h4 class="contahij" id="correo">
+                    joffregh3002@gmail.com
+                </h4>
+                <button class="bot" onclick="copiarAlPortapapeles()"><strong>COPIAR</strong></button>
+                <div class="tooltip" id="mensaje-copiado">Correo copiado al portapapeles</div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+<script>
+    function copiarAlPortapapeles() {
+        var correoElement = document.getElementById("correo");
+        var mensajeCopiado = document.getElementById("mensaje-copiado");
+        
+        var rangoSeleccion = document.createRange();
+        rangoSeleccion.selectNode(correoElement);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(rangoSeleccion);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+
+        // Muestra el mensaje de correo copiado
+        mensajeCopiado.style.opacity = 1;
+        setTimeout(function() {
+            mensajeCopiado.style.opacity = 0;
+        }, 1000); // Oculta el mensaje después de 1 segundos (ajusta según tus preferencias)
+    }
+</script>
+
+</body>
+</html>

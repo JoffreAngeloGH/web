@@ -1,0 +1,221 @@
+body {
+    font-family: Lato, system-ui, sans-serif;
+    background-color: rgb(2, 6, 23);
+    color: rgb(216, 216, 216);
+    
+}
+h2{
+    font-size: 20px;
+}
+.opciones-nav{
+    color: rgba(235, 242, 248, 0.849);
+    width: 110px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: content-box;
+}
+
+.foto-perf{
+    height: 100px;
+    height: 100px;
+    border-radius: 50px;
+        
+}
+.logo1{
+    width: 40px;
+}
+
+.nav{
+    text-align: center;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 115px;
+    
+}
+
+.menu-oculto{
+    display: none;
+}
+
+.main{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 55%; 
+}
+
+span{
+    font-size: 50px;
+}
+
+#sobre-mi{
+    margin-bottom: 80px;
+}
+
+.opc-cont{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.opciones-soci{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(235, 242, 248, 0.849);
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: rgb(41, 52, 63);
+}
+.opc-cont2{
+    width: 100%;
+    height: 285px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.opciones-soci2{
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 19px;
+    color: rgba(235, 242, 248, 0.849);
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: rgb(41, 52, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo3{
+    width: 35px;
+}
+
+#social{
+    margin-bottom: 80px;
+}
+
+.sec-pro{
+    display: flex;
+    margin-bottom: 80px; /* Agregado margen para separar las secciones */
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.foto-pro{
+    width: 360px;
+}
+
+.habilidades{
+    width: 100%;
+    display: flex;
+    margin-bottom: 80px;
+    flex-flow: row wrap;
+}
+
+.hijo-hab{
+    
+    flex-basis: 150px;
+    height: 55px;
+    background-color: rgb(41, 52, 63);
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 1px solid;
+    margin-left: 15px;
+    
+}
+.icono-hijo{
+    width: 35px;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    
+}
+
+.contahij{
+    width: 70%;
+    border: 3px solid rgba(136, 136, 136, 0.877);
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(41, 52, 63);
+    flex-grow: 1;
+    
+}
+
+.bot{
+    width: 20%;
+    height: 45px;
+    position: relative;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 1px solid rgba(136, 136, 136, 0.877);
+    font-family: Lato, system-ui, sans-serif;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px; /* Ajusta la posición vertical según diseño */
+    background-color: rgba(136, 136, 136, 0.877);
+    font-family: Lato, system-ui, sans-serif;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 886px) {
+    .nav {
+        display: none; /* Ocultamos la barra de navegación en pantallas pequeñas */
+    }
+
+    .menu-oculto {
+        display: block; /* Mostramos el menú de desplegable en pantallas pequeñas */
+    }
+    .main{
+        width: 100%; /* Cambiado a ancho completo para pantallas más pequeñas */
+    }
+
+    span {
+        font-size: 35px; /* Tamaño de fuente aún más reducido para pantallas muy pequeñas */
+    }
+
+    .sec-pro{
+        flex-wrap: wrap;
+        justify-content:center; /*eje x*/
+    }
+
+    .foto-pro{
+        width: 100%;
+    }
+
+    .opc-cont{
+        flex-direction: row; /* Cambiado a disposición de columna en pantallas pequeñas */
+        height: auto; /* Ajustado la altura para adaptarse al contenido en pantallas pequeñas */
+    }
+
+    .logo1{
+        width: 25px;
+    }
+}
